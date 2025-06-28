@@ -61,6 +61,7 @@ fun main() {
     println("กลุ่มราคา 1,0000 - 9,999")
     val priceUnder9999 = products
         .filter { it.price < 9999.0}
+        .filter { it.price >= 1000.0 }
     priceUnder9999.forEach { println(it) }
     println()
 
